@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://i.imgur.com/9YFOJKt.jpg');
+      background-size: cover;
+      color: black;
+    }
+    img {
+      margin: 25px 0px -20px 0px;
+      border: 7px solid black;
+      border-radius: 40px;
+    }
+    ul {
+      padding: 20px;
+      background: rgba(0,50,90,0.25);
+    }
+    li {
+      display: inline;
+      padding: 0px 50px 0px 50px;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 50px;
+      font-family: cursive;
+    }
+    h2 {
+      text-align: center;
+      font-family: cursive;
+    }
+    p {
+      font-family: Lucida;
+      padding: 20px;
+    }
+    article {
+      max-width: 700px;
+      padding: 10px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+       padding: 5px;
+      display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/ijJQsqT.png?1">
+    <h1>Ken's Food Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Plate Lunch Spots</a></li>
+      <li><a href="#">Dessert Spots</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>About Me</h2>
+    <p>Originally from the island of Oahu and I like traveling to other places in search of hidden eats. When ever we travel for vacation on of my favorite things to do is to research a good hole in the wall place with good food. I think it's fun to find how each city has their own twist to similar dishes</p>
+    <button>Approved</button>
+  </article>
+  <article>
+    <h2>Top 3 Plate Lunch On Oahu</h2>
+    <p>There are so many places to choose from so I'll pick my favorite spot to eat for different types of foods. In third place is Sugoi's in Kalihi, they serve my favorite garlic chicken. Second place is Dong Yangs in Wahiawa which serves meat jun. Not many people know what this is, but just go try it no questions asked. Number one would have to be any garlic shrimp truck in the North Shore of Hawaii. There are many different trucks but you can't go wrong with any of them.</p>
+    <button>Approved</button>
+  </article>
+  <article>
+    <h2>Top 3 Shave Ice On Oahu</h2>
+    <p>There are three main places on Oahu that I like and they all have their strengths. If you like really soft ice that melts in your mouth, Waiola's Shave ice is the place to go. Some people like flavor over texture and Shimazu's is the best for syrup flavors. If you want a little of both worlds, Matsumoto shave ice is a nice medium.</p>
+    <button>Approved</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("APPROVED!");
+    });
+  </script>
+</body>
+
